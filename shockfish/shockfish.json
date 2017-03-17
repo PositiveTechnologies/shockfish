@@ -1,0 +1,34 @@
+{
+    "virtual": {
+        "interface": "192.168.2.2",
+        "port": 80
+    },
+    "backend": {
+        "host": "192.168.1.2",
+        "port": 80
+    },
+    "logs": {
+        "file": "/var/log/shockfish.log",
+        "level": "error"
+    },
+    "sources": {
+        "cookies": true,
+        "headers": false,
+        "args": true
+    },
+    "protectors": {
+        "HTTPProtector": {"allowed_methods": ["POST", "GET"]},
+        "SQLiProtector":  "on",
+        "LDAPiProtector": "on",
+        "SSRFProtector":  "on",
+        "CRLFProtector":  "on",
+        "XSSProtector":   "on",
+        "ResponseProtector":  {
+            "js": {
+                "src": "fixtures/www/shockfish.js"
+            },
+            "secure_headers": "on"
+        }
+    }
+}
+
