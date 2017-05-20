@@ -3,7 +3,9 @@
 `Shockfish` is a classic  experimental Python-based web application firewall (WAF).
 
 Its main goals are to demonstrate common application security methods and algorithms implemented in WAFs,
-help web developers and security engineers better understand the processes of web applications firewalling , and illustrate some fundomental problems of this technology.
+help web developers and security engineers better understand the processes of web applications firewalling, and illustrate some fundomental problems of this technology.
+
+`Shockfish` is created for demonstration purposes only and must not be used in production.
 
 ## Installation
 
