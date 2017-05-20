@@ -20,8 +20,7 @@ python3 setup.py install
 The following config lets you protect a `www.example.com` web-application, which has `192.168.2.2` IP-address.
 
 1. Specify a protected web-server:
-
-    ```
+ ```
 {
     "backend": {
         "host": "192.168.2.2",
@@ -29,11 +28,11 @@ The following config lets you protect a `www.example.com` web-application, which
     },
     ...
 }
-    ``` 
+ ```
 
 2. Specify a virtual server interface and port:
 
-    ```
+ ```
 {
     "virtual": {
         "interface": "192.168.1.2",
@@ -41,19 +40,19 @@ The following config lets you protect a `www.example.com` web-application, which
     },
     ...
 }
-    ``` 
+ ``` 
 
 3. Add the following record to `/etc/hosts` or configure DNS server:
 
-    ```
+ ```
 192.168.1.2 www.example.com
-    ```
+ ```
 
 4. Run the following command:
 
-    ```
+ ```
 sudo python3 -m shockfish
-    ```
+ ```
 
 ## Description
 
