@@ -11,8 +11,8 @@ class XSSProtector:
     _priority = 1
 
     def __init__(self, request, options=None):
-            self.request = request
-            self.options = options
+        self.request = request
+        self.options = options
 
     def isxss(self, payload):
         """

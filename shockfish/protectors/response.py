@@ -17,8 +17,6 @@ class ResponseProtector:
         self.options = options
 
     def run(self):
-        #import pprint
-        #pprint.pprint(vars(self.request))
 
         if self.options.get("js"):
             self.request.bodyData = re.sub(b"(?i)<head>", ResponseProtector._injected_script, self.request.bodyData)

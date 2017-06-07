@@ -4,7 +4,6 @@ from shockfish.events import ResponseSpoofing
 from shockfish.constants import _path
 import shockfish.utils as utils
 
-
 logger = logging.getLogger(__name__)
 
 
